@@ -1,0 +1,54 @@
+<h1>moviesapi <span class="smallcaps">an API for movies and UK cinema listings
+    </span></h1>
+
+<p>moviesapi provides brief movie data, cinema listings and showtimes from UK
+   cinemas based upon a postcode. It screenscrapes <a href="http://findanyfilm.com/">
+   Find any Film.</a>.</p>
+
+<p>In an Guardian article from way back in 2009, they describe that an "API will 
+   also be rolled out that will allow developers to build applications around this
+   unique and rich data set". That didn't seem to ever happen.</p>
+
+<p>This was implemented to screenscrape Find any Film and provide a simple data
+   source for <a href="https://github.com/yrsIDAT/2013">YRS i-DAT's 2013 project</a>.
+   </p>
+
+<h2>Methods</h2>
+
+<p>There are API calls for <strong>listing cinemas by postcode</strong>, <strong>
+listing films currently in cinemas</strong> and <strong>listing cinema times for a
+cinema for the next few days</strong>.
+
+<h3>Nearby Cinemas By Postcode</h3>
+
+<pre><code>GET /cinemas/:postcode</code></pre>
+
+<h4>Response:</h4>
+
+<pre><code>{
+   [
+       {
+           "name": "Reel, Plymouth, Devon",
+           "address": "Reel, Derrys Cross, Plymouth, Devon, PL1 2SW",
+           "phone": "01752 663300",
+           "url": "http://www.reelcinemas.co.uk",
+           "distance": "1.1 miles"
+       }
+   ]
+}
+</code></pre>
+
+<h3>Films currently in Cinemas (across all)</h3>
+
+<h3>Cinema Times By Cinema</h3>
+
+<h2>Usage/Copyright/License</h2>
+
+<p>The code is open source and <a href="https://github.com/nickcharlton/moviesapi">
+hosted on GitHub</a>. It's hosted on <a href="http://heroku.com/">Heroku</a>.</p>
+
+<p>The content is bound by the data source itself and liable to the 
+<a href="http://www.findanyfilm.com/terms-and-conditions">Find any Film Terms and 
+Conditions</a>. It basically says that you cannot reuse the data commerically and 
+you are liable for the dissemination of said data. Or something.</p>
+

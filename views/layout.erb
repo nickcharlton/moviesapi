@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+	<meta name="author" content="Nick Charlton">
+    <meta name="description" content="An API for FindAnyFilms; 
+        a directory of films and UK Cinema Listings">
+
+    <title><%= title %> &mdash; moviesapi</title>
+		
+	<!-- sensible default styles -->
+	<link rel="stylesheet" href="/stylesheets/normalize.css">
+    <!-- pretty custom styles -->
+    <link rel="stylesheet" href="/stylesheets/main.css">
+  </head>
+	
+  <body>
+    <%= yield %>
+    
+    <script type="text/javascript">
+      var _gauges = _gauges || [];
+      (function() {
+        var t   = document.createElement('script');
+        t.type  = 'text/javascript';
+        t.async = true;
+        t.id    = 'gauges-tracker';
+        t.setAttribute('data-site-id', '51c1e2a9613f5d7d34000101');
+        t.src = '//secure.gaug.es/track.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(t, s);
+      })();
+    </script>
+  </body>
+</html>
+
