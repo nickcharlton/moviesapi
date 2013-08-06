@@ -12,4 +12,9 @@ body {
     font-size: 0.5em; /* 10px / 16px */
 }
 
+pre {
+    overflow: auto;
+    font-size: 0.75em;
+}
+
 
