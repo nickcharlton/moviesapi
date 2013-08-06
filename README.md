@@ -22,13 +22,13 @@ to run locally:
 foreman start
 ```
 
-Go to: [localhost:4000/].
+Go to: http://localhost:4000/.
 
 The `examples/` directory contains a few usage examples.
 
 ## License
 
-Copyright (c) 2013 Nick Charlton. Code MIT licenced.
+Copyright (c) 2013 Nick Charlton. Code under the MIT license.
 
 The content is bound by the data source itself and liable to the [Find any Film][]
 [Terms and Conditions][]. It basically says that you cannot reuse the data
@@ -41,4 +41,5 @@ commerically and you are liable for the dissemination of said data. Or something
 [Sinatra]: http://www.sinatrarb.com/
 [Nokogiri]: http://nokogiri.org/
 [UrbanScraper]: https://github.com/nickcharlton/urbanscraper
+[Heroku]: http://heroku.com/
 
