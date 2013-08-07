@@ -16,9 +16,10 @@
 
 <h2>Methods</h2>
 
-<p>There are API calls for <strong>listing cinemas by postcode</strong>, <strong>
-listing films currently in cinemas</strong> and <strong>listing cinema times for a
-cinema for the next few days</strong>.
+<p>There are API calls for <strong>listing nearby cinemas by postcode</strong>, and 
+<strong>listing cinema times for the next few days</strong>.
+
+<p>It will only return JSON. There is no authentication.</p>
 
 <h3>Nearby Cinemas By Postcode</h3>
 
@@ -29,6 +30,7 @@ cinema for the next few days</strong>.
 <pre><code>{
    [
        {
+           "venue_id": ""
            "name": "Reel, Plymouth, Devon",
            "address": "Reel, Derrys Cross, Plymouth, Devon, PL1 2SW",
            "phone": "01752 663300",
@@ -39,7 +41,7 @@ cinema for the next few days</strong>.
 }
 </code></pre>
 
-<h3>Films currently in Cinemas (across all)</h3>
+The response will be an array of ~10 cinemas.
 
 <h3>Cinema Times By Cinema</h3>
 
