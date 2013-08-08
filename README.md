@@ -7,8 +7,9 @@ way back in 2009][guardian] they describe that an "API will also be rolled out t
 will allow developers to build applications around this unique and rich data set".
 I guess that never happened, then.
 
-This is a quick-and-dirty API that screenscrapes Find any Film and was was 
-implemented to provide a movies data source for [YRS i-DAT's 2013 project][yrs].
+This is a quick-and-dirty API that screenscrapes Find any Film and was
+implemented to provide a cinemas and film showings data source for 
+[YRS i-DAT's 2013 project][yrs].
 
 It's a simple [Sinatra][] application, using [Nokogiri][] for HTML/XML parsing. It's
 very similar to the [UrbanScraper][] API I built previously.
@@ -24,15 +25,13 @@ foreman start
 
 Go to: http://localhost:4000/.
 
-The `examples/` directory contains a few usage examples.
-
 ## License
 
 Copyright (c) 2013 Nick Charlton. Code under the MIT license.
 
 The content is bound by the data source itself and liable to the [Find any Film][]
 [Terms and Conditions][]. It basically says that you cannot reuse the data
-commerically and you are liable for the dissemination of said data. Or something.
+commercially and you are liable for the dissemination of said data. Or something.
 
 [Find any Film]: http://www.findanyfilm.com
 [Terms and Conditions]: http://www.findanyfilm.com/terms-and-conditions
