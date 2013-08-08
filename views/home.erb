@@ -45,6 +45,24 @@ The response will be an array of ~10 cinemas.
 
 <h3>Cinema Times By Cinema</h3>
 
+<pre><code>GET /cinemas/:venue_id/showings</code></pre>
+
+<h4>Response</h4>
+
+<pre><code>[
+    {
+        "title": "Despicable Me 2 (2013) (U)",
+        "link":"/Despicable-Me-2~47022",
+        "time": [
+            "10:30"
+        ]
+    }
+]
+</code></pre>
+
+The "venue_id" should be gotten from the "Nearby Cinemas" call above. By default it
+returns the listings for today.
+
 <h2>Usage/Copyright/License</h2>
 
 <p>The code is open source and <a href="https://github.com/nickcharlton/moviesapi">
