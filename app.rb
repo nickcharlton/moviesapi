@@ -1,5 +1,11 @@
 require 'sinatra'
 require 'json'
+require './movies'
+
+#
+# Movies Global
+#
+movies = Movies.new
 
 #
 # Routes
@@ -16,7 +22,9 @@ end
 # Find Nearby Cinemas by Postcode
 #
 get '/cinemas/find/:postcode' do
-  
+  cinemas = movies.find_cinemas_detailed(params[:postcode])
+
+  cinemas.to_json
 end
 
 #
