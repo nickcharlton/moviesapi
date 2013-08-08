@@ -31,7 +31,9 @@ end
 # Show Listings for Cinemas
 #
 get '/cinemas/:venue_id/showings' do
+  showings = movies.get_movie_showings(params[:venue_id], 0)
 
+  showings.to_json
 end
 
 #
