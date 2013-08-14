@@ -1,0 +1,71 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://www.findanyfilm.com/find-a-cinema-3?day=0&venue_id=1552&action=Screenings&townpostcode=
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      accept:
+      - '*/*; q=0.5, application/xml'
+      accept-encoding:
+      - gzip, deflate
+      user-agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      cache-control:
+      - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+      content-encoding:
+      - gzip
+      content-type:
+      - text/html; charset=UTF-8
+      date:
+      - Wed, 14 Aug 2013 23:52:49 GMT
+      expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      pragma:
+      - no-cache
+      server:
+      - Apache
+      set-cookie:
+      - PHPSESSID=8afouqseq3lqsqk5n69p15g7c0; expires=Thu, 15-Aug-2013 09:52:49 GMT;
+        path=/
+      - townpostcode=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; path=/; domain=www.findanyfilm.com
+      vary:
+      - Accept-Encoding
+      content-length:
+      - '920'
+      connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAA9RXW2/bNhT+K4QwRDJaWxc3S5PJHrCtwx4atFi67WEqDEY8
+        ltlQpEDRdt00/e09lHyRZadO5wFB+EKdw3P7Ph5J5K0zMblwLpy4TDUvDDGL
+        AgaJY+CjSfwPdEZrfeIME0lw/OAxlU5zkKbT00DZwhtPZWq4kl7ntjapzdye
+        4ekNmJHg8sbt9FKB4n5jO2ZUk4JqmpdkgN5mwstOjxqjPVcomWGAshDceO5n
+        t/PTrmvKJeRU0hzQ3X3FciWNkq8B/qZCwOINAyXdPX5GzaX1eK0k228x5iI3
+        3AgbuC7w3+D9PXaMmip/FIRhNwy64Xk7YuInfqZUJuCdpkiP/gNEAbrHVCW/
+        pRl4JHESf8wl69JujQu9HPKsCfJZZVRpKwgNeVNwS1lV19CtWLZ77XVIm9Zv
+        lPlqhvvvEXeryG7ffU7c+nlEP42ulbqxmj8BhJ3D09PI3cpytxKqhzjx617D
+        TkNpKkgqaFliM9rCSyLVugljwZeLrpJACMWemsFyGjG6GBl6TYg73OSK6Toc
+        /UA/joS8QRI0iIF7mziFVpmGsvyF6t+xQxPnAmkqJ2p+lWoAyWX2dmmROHcu
+        mWgYD3Z2qdv/GVMPwhNkZwojzgYW8gmtGn6wjlSe2B0rVGlSxey7Ntzm/Z3C
+        KI3CE5+uYCe+4PspeByo0dFQc6W1mn8HWizFIY8Ctn8k2CtqmmJ8rfFr0LIJ
+        zxI/eJn4Yf8JEPLiWEKmW+J+Ql4+IUJOjyTkUj2AkPMnRMiPx34fpnCQkCj4
+        b4Q8DiNnRzLyD7DDjIQPYATnqaj/tIzP1vANz6HcyhoXw1/t0Y1gc1JiYRNr
+        RKhkZA6uEMgT4xpSQxZqiqcRYiZA7M8f4eCJKYMe5ioaEZeF4C9aWEPNQGPm
+        ABlPQYiCMoaeDU1Z0HStaWGtI+mWNjasgQiPQuiHe7zemd+gLHhq83cvoRt9
+        eXEWRBHakN3gG1NyCSQiHp7t+h3i/dXZKWNDckNl2G5tezDsGzHPMzLnzEyw
+        6Ogc2ZgAzyZmJZU6rdAgTjBl4vMcybZzqiROy74rDe4U1ayX8TE6UWH9r5ZK
+        sm48XKqYum+x6rL2Hu4ZDyLgG+12MMH/MmLsKTkkYXgRBrbISrw/5aHy2jCt
+        3O7JjZddtQ219UqgEt9DVDnPnbFM8UZ26Jrg7nxhsBU+rfbdXjTC8zCwV5HE
+        xzuTc/cVAAD//wMAMJLPLOwNAAA=
+    http_version: '1.1'
+  recorded_at: Wed, 14 Aug 2013 23:52:49 GMT
+recorded_with: VCR 2.5.0
