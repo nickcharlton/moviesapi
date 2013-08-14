@@ -43,7 +43,6 @@ describe 'Movies' do
 
     # pull out one and test that
     cinema = cinemas[0]
-    p cinema
     cinema.must_be_kind_of Hash
 
     # it has a combination of the details in the other set
@@ -53,5 +52,24 @@ describe 'Movies' do
     cinema['address'].wont_be_nil
     cinema['phone_number'].wont_be_nil
     cinema['link'].wont_be_nil
+  end
+
+  it 'gets showings for a cinema' do
+    showings = @movies.get_movie_showings("1552", "0")
+
+    # it should be a list of showings
+    showings.must_be_kind_of Array
+
+    # if there are some, it should be a bit like this
+    if not showings.empty?
+      showing = showings[0]
+      showing.must_be_kind_of Hash
+
+      showing['title'].wont_be_nil
+      showing['link'].wont_be_nil
+      showing['time'].must_be_kind_of Array
+    else
+      showings.must_be_empty
+    end
   end
 end
