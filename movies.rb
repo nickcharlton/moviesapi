@@ -116,7 +116,7 @@ class Movies
 
     # don't process more if there's nothing to process
     if show_times.to_html.include? "Sorry, there are no screenings"
-      return "No screenings."
+      return []
     end
 
     data = Array.new
