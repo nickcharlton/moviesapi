@@ -34,4 +34,24 @@ describe 'Movies' do
     cinema['phone_number'].wont_be_nil
     cinema['link'].wont_be_nil
   end
+
+  it 'has a version featuring full cinema details' do
+    cinemas = @movies.find_cinemas_detailed("PL15RH")
+
+    # contain something, at least
+    cinemas.wont_be_empty
+
+    # pull out one and test that
+    cinema = cinemas[0]
+    p cinema
+    cinema.must_be_kind_of Hash
+
+    # it has a combination of the details in the other set
+    cinema['title'].wont_be_nil
+    cinema['venue_id'].wont_be_nil
+    cinema['distance'].wont_be_nil
+    cinema['address'].wont_be_nil
+    cinema['phone_number'].wont_be_nil
+    cinema['link'].wont_be_nil
+  end
 end
