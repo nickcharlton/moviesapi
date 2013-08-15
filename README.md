@@ -1,5 +1,7 @@
 # moviesapi
 
+[![Build Status](https://secure.travis-ci.org/nickcharlton/moviesapi.png?branch=master)](http://travis-ci.org/nickcharlton/moviesapi) [![Code Climate](https://codeclimate.com/github/nickcharlton/moviesapi.png)](https://codeclimate.com/github/nickcharlton/moviesapi)
+
 Accessing movie data and up-to-date cinema listings is unreasonably hard.
 
 [Find any Film][] was originally funded by the UK Film Council. In [an article from
