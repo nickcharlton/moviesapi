@@ -3,6 +3,10 @@ ENV['RACK_ENV'] = 'test'
 require 'minitest/autorun'
 require 'minitest/pride'
 
+# enable Coveralls
+require 'coveralls'
+Coveralls.wear!
+
 # pull in the VCR setup
 require File.expand_path './support/vcr_setup.rb', __dir__
 
