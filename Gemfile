@@ -10,7 +10,7 @@ gem 'rest-client', '1.6.7'
 
 group :development, :test do
   gem 'minitest', '~> 5.0.0'
-  gem 'fakeweb', '~> 1.3.0'
+  gem 'webmock', '~> 1.13.0'
   gem 'vcr', '~> 2.5.0'
   gem 'coveralls', require: false
 end

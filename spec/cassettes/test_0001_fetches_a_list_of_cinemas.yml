@@ -7,40 +7,38 @@ http_interactions:
       encoding: US-ASCII
       string: ''
     headers:
-      accept-encoding:
+      Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      accept:
+      Accept:
       - '*/*'
-      user-agent:
+      User-Agent:
       - Ruby
   response:
     status:
       code: 200
       message: OK
     headers:
-      cache-control:
+      Cache-Control:
       - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
-      content-encoding:
-      - gzip
-      content-type:
+      Content-Type:
       - text/html; charset=UTF-8
-      date:
-      - Wed, 14 Aug 2013 23:00:57 GMT
-      expires:
+      Date:
+      - Thu, 15 Aug 2013 13:00:00 GMT
+      Expires:
       - Thu, 19 Nov 1981 08:52:00 GMT
-      pragma:
+      Pragma:
       - no-cache
-      server:
+      Server:
       - Apache
-      set-cookie:
-      - PHPSESSID=m6k3o1p292bq171m8o1lktsjc5; expires=Thu, 15-Aug-2013 09:00:57 GMT;
+      Set-Cookie:
+      - PHPSESSID=qd961ae7bfeiovul2vhubpk7e2; expires=Thu, 15-Aug-2013 23:00:00 GMT;
         path=/
-      - townpostcode=PL15RH; expires=Tue, 12-Nov-2013 23:00:57 GMT; path=/; domain=www.findanyfilm.com
-      vary:
+      - townpostcode=PL15RH; expires=Wed, 13-Nov-2013 13:00:00 GMT; path=/; domain=www.findanyfilm.com
+      Vary:
       - Accept-Encoding
-      transfer-encoding:
+      Transfer-Encoding:
       - chunked
-      connection:
+      Connection:
       - keep-alive
     body:
       encoding: ASCII-8BIT
@@ -1186,6 +1184,6 @@ http_interactions:
         c2NyaXB0IiBzcmM9Imh0dHA6Ly9zY3JpcHQuZmluZGFueWZpbG0uY29tL2Fz
         c2V0cy9zY3JpcHRzL2pxdWVyeS52dGlja2VyLmpzIj48L3NjcmlwdD4NCgkg
         ICAgPC9odG1sPg0K
-    http_version: '1.1'
-  recorded_at: Wed, 14 Aug 2013 23:00:57 GMT
+    http_version: 
+  recorded_at: Thu, 15 Aug 2013 13:00:00 GMT
 recorded_with: VCR 2.5.0

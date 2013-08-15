@@ -2,45 +2,43 @@
 http_interactions:
 - request:
     method: get
-    uri: http://www.findanyfilm.com/find-a-cinema-3?&venue_id=1552&action=CinemaInfo
+    uri: http://www.findanyfilm.com/find-a-cinema-3?action=CinemaInfo&venue_id=1552
     body:
       encoding: US-ASCII
       string: ''
     headers:
-      accept-encoding:
+      Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      accept:
+      Accept:
       - '*/*'
-      user-agent:
+      User-Agent:
       - Ruby
   response:
     status:
       code: 200
       message: OK
     headers:
-      cache-control:
+      Cache-Control:
       - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
-      content-encoding:
-      - gzip
-      content-type:
+      Content-Type:
       - text/html; charset=UTF-8
-      date:
-      - Wed, 14 Aug 2013 23:20:27 GMT
-      expires:
+      Date:
+      - Thu, 15 Aug 2013 12:59:59 GMT
+      Expires:
       - Thu, 19 Nov 1981 08:52:00 GMT
-      pragma:
+      Pragma:
       - no-cache
-      server:
+      Server:
       - Apache
-      set-cookie:
-      - PHPSESSID=r48ppg18dqp6qomdmsgk6h50n0; expires=Thu, 15-Aug-2013 09:20:27 GMT;
+      Set-Cookie:
+      - PHPSESSID=f0d7cfejdgneoaovlhkjt6vsd7; expires=Thu, 15-Aug-2013 22:59:59 GMT;
         path=/
       - townpostcode=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; path=/; domain=www.findanyfilm.com
-      vary:
+      Vary:
       - Accept-Encoding
-      transfer-encoding:
+      Transfer-Encoding:
       - chunked
-      connection:
+      Connection:
       - keep-alive
     body:
       encoding: ASCII-8BIT
@@ -873,6 +871,6 @@ http_interactions:
         dCB0eXBlPSJ0ZXh0L2phdmFzY3JpcHQiIHNyYz0iaHR0cDovL3NjcmlwdC5m
         aW5kYW55ZmlsbS5jb20vYXNzZXRzL3NjcmlwdHMvanF1ZXJ5LnZ0aWNrZXIu
         anMiPjwvc2NyaXB0Pg0KCSAgICA8L2h0bWw+DQo=
-    http_version: '1.1'
-  recorded_at: Wed, 14 Aug 2013 23:20:28 GMT
+    http_version: 
+  recorded_at: Thu, 15 Aug 2013 13:00:00 GMT
 recorded_with: VCR 2.5.0
