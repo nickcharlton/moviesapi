@@ -36,8 +36,29 @@ end
 # Find Nearby Cinemas by Postcode
 #
 get '/cinemas/find/:postcode' do
-  cinemas = movies.find_cinemas_detailed(params[:postcode])
+  param :page, Integer, default: 1
 
+  # we'll always increment by 10 cinemas
+  increment = 10
+  # calculate the end from the page, then the start back from it
+  end_count = params[:page] * increment
+  start = (end_count - increment)
+  # the first page makes for a bit of a special case
+  # without this, the results will overhang each other
+  if params[:page] > 1
+    start += 1
+  end
+
+  range = Range.new(start, end_count)
+  # fetch a specied range of cinemas
+  cinemas = movies.find_cinemas_detailed(params[:postcode], range)
+
+  # if we've tried to fetch too many, throw an exception
+  unless cinemas[:cinemas].count > 0
+    halt 400, {:message => 'The specified page parameter was out of range.'}.to_json
+  end
+
+  #  but, if it all worked, pass the data
   cinemas[:cinemas].to_json
 end
 

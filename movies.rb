@@ -95,6 +95,11 @@ class Movies
 
     # extract only a range (for pagination)
     cinemas = cinemas[range]
+    
+    # handle out of range errors
+    unless cinemas
+      cinemas = []
+    end
 
     # merge with the details
     Hash[:cinemas => cinemas.each { |cinema| 
