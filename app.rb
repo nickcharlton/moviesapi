@@ -8,6 +8,14 @@ require './movies'
 movies = Movies.new
 
 #
+# Helpers
+#
+before do
+  # we almost always want a JSON output
+  content_type :json
+end
+
+#
 # Routes
 #
 
@@ -15,6 +23,9 @@ movies = Movies.new
 # Documentation
 #
 get '/' do
+  # in this case, it shouldn't be JSON
+  content_type :html
+
   erb :home
 end
 
