@@ -35,7 +35,7 @@ end
 get '/cinemas/find/:postcode' do
   cinemas = movies.find_cinemas_detailed(params[:postcode])
 
-  cinemas.to_json
+  cinemas[:cinemas].to_json
 end
 
 #
