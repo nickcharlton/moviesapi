@@ -86,16 +86,22 @@ class Movies
     ]
   end
 
-  def find_cinemas_detailed(postcode)
+  def find_cinemas_detailed(postcode, range = 0..10)
     # fetch all of the cinemas
     cinemas = find_cinemas(postcode)
+    
+    # hold on to the total amount of cinemas
+    total = cinemas.count
+
+    # extract only a range (for pagination)
+    cinemas = cinemas[range]
 
     # merge with the details
-    cinemas.each { |cinema| 
+    Hash[:cinemas => cinemas.each { |cinema| 
       venue_id = cinema["venue_id"]
       details = cinema_details(venue_id)
       cinema.merge!(details)
-    }
+    }, :total => total]
   end
 
   def get_movie_showings(venue_id, day)
