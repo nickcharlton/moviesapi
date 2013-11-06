@@ -74,20 +74,4 @@ describe 'Movies' do
       showings.must_be_empty
     end
   end
-
-  it 'fetches cinemas in london' do
-    cinemas = @movies.find_cinemas("W67NX")
-    
-    # it should at least contain a cinema
-    cinemas.wont_be_empty
-
-    # pull out one and test that
-    cinema = cinemas[0]
-    cinema.must_be_kind_of Hash
-
-    cinema['title'].wont_be_nil
-    cinema['venue_id'].wont_be_nil
-    cinema['distance'].wont_be_nil
-  end
-
 end
