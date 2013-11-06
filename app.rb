@@ -1,4 +1,5 @@
 require 'sinatra'
+require 'sinatra/param'
 require 'json'
 require './movies'
 
@@ -10,6 +11,8 @@ movies = Movies.new
 #
 # Helpers
 #
+helpers Sinatra::Param
+
 before do
   # we almost always want a JSON output
   content_type :json
