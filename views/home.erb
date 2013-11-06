@@ -42,7 +42,13 @@
 </code></pre>
 
 The postcode should be without spaces (although, with should be fine), like: 
-<strong>PL15RH</strong>. The response will be an array of ~10 cinemas.
+<strong>PL15RH</strong>. The initial response is limited to 10 cinemas, with paging
+for further results. Like so:
+
+<pre><code>GET /cinemas/find/:postcode?page=2</code></pre>
+
+The <code>Link</code> headers indicate how many pages are accessible. If you go over
+the limit, you'll see a <strong>400 Bad Request</strong>.
 
 <h3>Cinema Times By Cinema</h3>
 
