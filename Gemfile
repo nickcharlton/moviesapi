@@ -8,6 +8,7 @@ gem 'nokogiri', '1.6.0'
 gem 'json', '1.8.0'
 gem 'rest-client', '1.6.7'
 gem 'sinatra-param', '1.0.0'
+gem 'sentry-raven'
 
 group :development, :test do
   gem 'minitest', '~> 5.0.0'

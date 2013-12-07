@@ -1,7 +1,10 @@
 require 'sinatra'
 require 'sinatra/param'
+require 'raven'
 require 'json'
 require './movies'
+
+use Raven::Rack
 
 #
 # Movies Global
