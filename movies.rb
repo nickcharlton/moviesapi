@@ -70,8 +70,15 @@ class Movies
     end
 
     # link child contains the cinema url
-    link = cinema.children.at_xpath("//p/a")
-    link = link.attribute("href").content
+    begin
+      link = cinema.children.at_xpath("//p/a")
+      link = link.attribute("href").content
+    rescue NoMethodError
+      link = ""
+    end
+
+    # process the struture of the link
+    # (it's laid out as a redirect).
     begin
       link = link.split(/[?&]/)[2]
       link = link.split(/[=]/)[1]
