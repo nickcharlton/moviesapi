@@ -15,5 +15,5 @@ group :development, :test do
   gem 'minitest', '~> 5.5'
   gem 'webmock', '~> 1.2'
   gem 'vcr', '~> 2.9'
-  gem 'coveralls', require: false
+  gem 'codeclimate-test-reporter', require: nil
 end
