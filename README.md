@@ -1,7 +1,9 @@
 # moviesapi
 
 [![Build Status](https://travis-ci.org/nickcharlton/moviesapi.svg?branch=master)](https://travis-ci.org/nickcharlton/moviesapi)
-[![Coverage Status](https://img.shields.io/coveralls/nickcharlton/moviesapi.svg)](https://coveralls.io/r/nickcharlton/moviesapi?branch=master)
+[![Code Climate](https://codeclimate.com/github/nickcharlton/moviesapi/badges/gpa.svg)](https://codeclimate.com/github/nickcharlton/moviesapi)
+[![Test Coverage](https://codeclimate.com/github/nickcharlton/moviesapi/badges/coverage.svg)](https://codeclimate.com/github/nickcharlton/moviesapi)
+[![Dependency Status](https://gemnasium.com/nickcharlton/moviesapi.svg)](https://gemnasium.com/nickcharlton/moviesapi)
 
 Accessing movie data and up-to-date cinema listings is unreasonably hard.
 
@@ -11,7 +13,7 @@ will allow developers to build applications around this unique and rich data set
 I guess that never happened, then.
 
 This is a quick-and-dirty API that screenscrapes Find any Film and was
-implemented to provide a cinemas and film showings data source for 
+implemented to provide a cinemas and film showings data source for
 [YRS i-DAT's 2013 project][yrs].
 
 It's a simple [Sinatra][] application, using [Nokogiri][] for HTML/XML parsing. It's
