@@ -5,5 +5,5 @@ VCR.configure do |c|
   c.hook_into :webmock
 
   # ensure codelimate still works
-  config.ignore_hosts 'codeclimate.com'
+  c.ignore_hosts 'codeclimate.com'
 end
