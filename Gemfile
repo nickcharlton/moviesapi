@@ -2,13 +2,20 @@ source 'https://rubygems.org'
 
 ruby '2.2.2'
 
-gem 'rake', '~> 10.4'
+# sinatra and friends
 gem 'sinatra', '~> 1.4'
-gem 'thin', '~> 1.6'
-gem 'nokogiri', '~> 1.6'
-gem 'json', '~> 1.8'
-gem 'rest-client', '~> 1.8'
 gem 'sinatra-param', '~> 1.4'
+gem 'thin', '~> 1.6'
+gem 'json', '~> 1.8'
+
+# requests
+gem 'nokogiri', '~> 1.6'
+gem 'rest-client', '~> 1.8'
+
+# tasks
+gem 'rake', '~> 10.4'
+
+# error handling
 gem 'sentry-raven', '~> 0.14'
 
 group :development, :test do
