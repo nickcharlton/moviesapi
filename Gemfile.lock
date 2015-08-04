@@ -2,11 +2,12 @@ GEM
   remote: https://rubygems.org/
   specs:
     addressable (2.3.8)
+    certifi (14.5.14)
     codeclimate-test-reporter (0.4.7)
       simplecov (>= 0.7.1, < 1.0.0)
     crack (0.4.2)
       safe_yaml (~> 1.0.0)
-    daemons (1.2.2)
+    daemons (1.2.3)
     docile (1.1.5)
     domain_name (0.5.24)
       unf (>= 0.0.5, < 1.0.0)
@@ -32,7 +33,8 @@ GEM
       mime-types (>= 1.16, < 3.0)
       netrc (~> 0.7)
     safe_yaml (1.0.4)
-    sentry-raven (0.13.3)
+    sentry-raven (0.14.0)
+      certifi
       faraday (>= 0.7.6)
     simplecov (0.10.0)
       docile (~> 1.1.0)
@@ -64,13 +66,16 @@ PLATFORMS
 DEPENDENCIES
   codeclimate-test-reporter
   json (~> 1.8)
-  minitest (~> 5.5)
+  minitest (~> 5.7)
   nokogiri (~> 1.6)
-  rake (~> 10.0)
-  rest-client (~> 1.7)
-  sentry-raven
+  rake (~> 10.4)
+  rest-client (~> 1.8)
+  sentry-raven (~> 0.14)
   sinatra (~> 1.4)
-  sinatra-param (~> 1.3)
+  sinatra-param (~> 1.4)
   thin (~> 1.6)
   vcr (~> 2.9)
-  webmock (~> 1.2)
+  webmock (~> 1.21)
+
+BUNDLED WITH
+   1.10.6
