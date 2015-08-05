@@ -24,63 +24,46 @@ module MoviesApi
     # Find Nearby Cinemas by Postcode
     #
     get '/cinemas/find/:postcode' do
-      param :page, Integer, default: 1
+      faf = FindAnyFilm.new
+      cinemas = faf.find_cinemas(params[:postcode])
 
-      # we'll always increment by 10 cinemas
-      increment = 10
-      # calculate the end from the page, then the start back from it
-      end_count = params[:page] * increment
-      start = (end_count - increment)
-      # the first page makes for a bit of a special case
-      # without this, the results will overhang each other
-      if params[:page] > 1
-        start += 1
-      end
-
-      range = Range.new(start, end_count)
-      # fetch a specied range of cinemas
-      cinemas = movies.find_cinemas_detailed(params[:postcode], range)
-
-      # if we've tried to fetch too many, throw an exception
-      unless cinemas[:cinemas].count > 0
-        halt 400, {:message => 'The specified page parameter was out of range.'}.to_json
-      end
-
-      # set the link headers
-      total = cinemas[:total]
-      next_page_count = params[:page] + 1
-      last_page_count = (total.to_f / increment.to_f).round
-      
-      next_page = url('/cinemas/find/%s?page=%d' % [params[:postcode], next_page_count])
-      last_page = url('/cinemas/find/%s?page=%d' % [params[:postcode], last_page_count])
-
-      # next isn't helpful unless we can progress
-      if next_page_count > last_page_count
-        link_set = "<#{last_page}>; rel='last'"
-      else
-        link_set = "<#{next_page}>; rel='next', <#{last_page}>; rel='last'"
-      end
-
-      headers 'Link' => link_set
-
-      #  but, if it all worked, pass the data
-      cinemas[:cinemas].to_json
+      cinemas.to_json
     end
 
     #
     # Show Listings for Cinemas
     #
     get '/cinemas/:venue_id/showings' do
-      showings = movies.get_movie_showings(params[:venue_id], 1)
+      faf = FindAnyFilm.new
+      showings = faf.find_cinema_showings(params[:venue_id])
 
-      showings.to_json
+      # this is technically showing films, not showings
+      # so, we're, badly, flipping it back to the original implementation
+      films = {}
+
+      showings.each do |showing|
+        film = films.fetch(showing.film.title, {})
+
+        film[:title] = showing.film.title
+        film[:link] = ''
+        times = film.fetch(:time, [])
+        times << showing.start_time.strftime('%H:%M')
+        film[:time] = times
+
+        films[film[:title]] = film
+      end
+
+      response = []
+      films.each { |_k, v| response << v }
+
+      response.to_json
     end
 
     #
     # Error Handling
     #
     not_found do
-      {:status => 404, :message => "Not Found"}.to_json
+      { status: 404, message: 'Not Found' }.to_json
     end
   end
 end

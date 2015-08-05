@@ -55,6 +55,7 @@ module MoviesApi
                                     "#{start_time.strftime('%Y%m%d%H%M%S')}",
                                 cinema_id: cinema_id,
                                 film_id: film.id,
+                                film: film, # a hack
                                 start_time: start_time,
                                 booking_url: booking_url)
 
@@ -65,6 +66,13 @@ module MoviesApi
       showings
     end
     # rubocop:enable AbcSize, MethodLength
+
+    # Get the featured films listed on the site.
+    def find_featured_films
+      # 'http://www.findanyfilm.com/search/live-film?term=--TOP-INITIAL--'
+
+      # %r{\([0-9]*\)}
+    end
 
     private
 
