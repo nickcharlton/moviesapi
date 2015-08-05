@@ -5,12 +5,11 @@ ruby '2.2.2'
 # sinatra and friends
 gem 'sinatra', '~> 1.4'
 gem 'sinatra-param', '~> 1.4'
-gem 'thin', '~> 1.6'
 gem 'json', '~> 1.8'
 
 # requests
-gem 'nokogiri', '~> 1.6'
-gem 'rest-client', '~> 1.8'
+gem 'mechanize', '~> 2.7'
+gem 'excon', '~> 0.45'
 
 # tasks
 gem 'rake', '~> 10.4'

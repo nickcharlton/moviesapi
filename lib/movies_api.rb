@@ -1,0 +1,10 @@
+require 'date'
+require 'json'
+require 'sinatra/base'
+require 'tilt/erb'
+require 'sinatra/param'
+require 'raven'
+require 'mechanize'
+require 'excon'
+
+require 'movies_api/app'
