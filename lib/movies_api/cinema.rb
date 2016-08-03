@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 module MoviesApi
   class Cinema < Resource
     attr_accessor :id, :name, :address, :phone, :url, :lat, :lon

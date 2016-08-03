@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 module MoviesApi
   # Sinatra app to give basic film showing details.
   class App < Sinatra::Base

@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 module MoviesApi
   # A source for fetching data from FindAnyFilm.com.
   class FindAnyFilm
