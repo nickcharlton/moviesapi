@@ -24,4 +24,4 @@ end
 ##
 # By default, just run the tests.
 ##
-task :default => :spec
+task default: :spec

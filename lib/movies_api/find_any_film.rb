@@ -46,11 +46,11 @@ module MoviesApi
         v["showings"].each do |raw_showing|
           start_time = DateTime.parse(raw_showing["showtime"])
 
-          if raw_showing["ticketing_link"] == '#no_link_available'
-            booking_url = nil
-          else
-            booking_url = raw_showing["ticketing_link"]
-          end
+          booking_url = if raw_showing["ticketing_link"] == "#no_link_available"
+                          nil
+                        else
+                          raw_showing["ticketing_link"]
+                        end
 
           showing = Showing.new(id: "#{cinema_id}_#{film.id}_" \
                                     "#{start_time.strftime('%Y%m%d%H%M%S')}",

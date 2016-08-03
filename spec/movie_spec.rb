@@ -14,7 +14,7 @@ describe "Movies" do
 
   it "fetches a list of cinemas" do
     cinemas = @movies.find_cinemas("PL15RH")
-    
+
     # it should at least contain a cinema
     cinemas.wont_be_empty
 
