@@ -1,7 +1,7 @@
 ##
 # Initialise Bundler, catch errors.
 ##
-require 'bundler'
+require "bundler"
 
 begin
   Bundler.setup(:default, :development)
@@ -14,10 +14,10 @@ end
 ##
 # Configure the test suite.
 ##
-require 'rake/testtask'
+require "rake/testtask"
 
 Rake::TestTask.new :spec do |t|
-  t.test_files = Dir['spec/*_spec.rb']
+  t.test_files = Dir["spec/*_spec.rb"]
 end
 
 ##

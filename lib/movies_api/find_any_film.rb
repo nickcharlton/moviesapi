@@ -1,7 +1,7 @@
 module MoviesApi
   # A source for fetching data from FindAnyFilm.com.
   class FindAnyFilm
-    BASE_URL = 'http://www.findanyfilm.com'
+    BASE_URL = "http://www.findanyfilm.com"
 
     attr_reader :agent
 
@@ -16,8 +16,8 @@ module MoviesApi
 
       cinemas = []
 
-      page.search('.cinemaResult').each do |result|
-        cinema_id = result.attributes['rel'].value.scan(/[0-9]*/).join
+      page.search(".cinemaResult").each do |result|
+        cinema_id = result.attributes["rel"].value.scan(/[0-9]*/).join
 
         cinemas << Cinema.new(id: cinema_id, name: extract_cinema_name(result))
       end
@@ -39,16 +39,16 @@ module MoviesApi
 
       showings = []
 
-      response[cinema_id]['films'].each do |_k, v|
+      response[cinema_id]["films"].each do |_k, v|
         film = film_from_json(v)
 
-        v['showings'].each do |raw_showing|
-          start_time = DateTime.parse(raw_showing['showtime'])
+        v["showings"].each do |raw_showing|
+          start_time = DateTime.parse(raw_showing["showtime"])
 
-          if raw_showing['ticketing_link'] == '#no_link_available'
+          if raw_showing["ticketing_link"] == '#no_link_available'
             booking_url = nil
           else
-            booking_url = raw_showing['ticketing_link']
+            booking_url = raw_showing["ticketing_link"]
           end
 
           showing = Showing.new(id: "#{cinema_id}_#{film.id}_" \
@@ -78,7 +78,7 @@ module MoviesApi
 
     # Extract a clean name for a Cinema block.
     def extract_cinema_name(result)
-      cinema_name = result.search('.cinemaName')
+      cinema_name = result.search(".cinemaName")
       cinema_name = cinema_name.first.children.to_s
 
       cinema_name.strip
@@ -86,18 +86,18 @@ module MoviesApi
 
     # Extract a clean URL for a Cinema info block.
     def extract_cinema_url(result)
-      url = result.search('.visitWebsiteLink a').first
-      url.attributes['href'].value
+      url = result.search(".visitWebsiteLink a").first
+      url.attributes["href"].value
     end
 
     # Extract an address block from a Cinema info block.
     def extract_address_block(result)
       # this is the only non addressable block, ironically.
-      raw = result.search('.cinemaAddress').first.children.children.to_s
+      raw = result.search(".cinemaAddress").first.children.children.to_s
 
-      raw = raw.gsub(%r{<strong>Address:<\/strong><br>}, '').strip
-      address = ''
-      raw.split('<br>').each do |component|
+      raw = raw.gsub(%r{<strong>Address:<\/strong><br>}, "").strip
+      address = ""
+      raw.split("<br>").each do |component|
         address << "#{component.strip} "
       end
 
@@ -126,12 +126,12 @@ module MoviesApi
 
     # Build a `Film` object from JSON source.
     def film_from_json(json)
-      film_data = json['film_data']
-      Film.new(id: film_data['film_id'],
-               title: film_data['film_title'],
-               release_year: film_data['release_year'],
-               available_in_3d: film_data['has_3d_version'],
-               certificate: film_data['certificate'])
+      film_data = json["film_data"]
+      Film.new(id: film_data["film_id"],
+               title: film_data["film_title"],
+               release_year: film_data["release_year"],
+               available_in_3d: film_data["has_3d_version"],
+               certificate: film_data["certificate"])
     end
   end
 end

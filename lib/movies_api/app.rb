@@ -13,7 +13,7 @@ module MoviesApi
     #
     # Documentation
     #
-    get '/' do
+    get "/" do
       # in this case, it shouldn't be JSON
       content_type :html
 
@@ -23,7 +23,7 @@ module MoviesApi
     #
     # Find Nearby Cinemas by Postcode
     #
-    get '/cinemas/find/:postcode' do
+    get "/cinemas/find/:postcode" do
       faf = FindAnyFilm.new
       cinemas = faf.find_cinemas(params[:postcode])
 
@@ -33,7 +33,7 @@ module MoviesApi
     #
     # Show Listings for Cinemas
     #
-    get '/cinemas/:venue_id/showings' do
+    get "/cinemas/:venue_id/showings" do
       faf = FindAnyFilm.new
       showings = faf.find_cinema_showings(params[:venue_id])
 
@@ -45,9 +45,9 @@ module MoviesApi
         film = films.fetch(showing.film.title, {})
 
         film[:title] = showing.film.title
-        film[:link] = ''
+        film[:link] = ""
         times = film.fetch(:time, [])
-        times << showing.start_time.strftime('%H:%M')
+        times << showing.start_time.strftime("%H:%M")
         film[:time] = times
 
         films[film[:title]] = film
@@ -63,7 +63,7 @@ module MoviesApi
     # Error Handling
     #
     not_found do
-      { status: 404, message: 'Not Found' }.to_json
+      { status: 404, message: "Not Found" }.to_json
     end
   end
 end
