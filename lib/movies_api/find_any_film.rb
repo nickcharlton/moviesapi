@@ -35,7 +35,9 @@ module MoviesApi
     #
     # rubocop:disable AbcSize, MethodLength
     def find_cinema_showings(cinema_id, date = Date.today)
-      url = "#{BASE_URL}/api/screenings/venue_id/#{cinema_id}/date_from/#{date}"
+      url = "#{BASE_URL}/api/screenings/by_venue_id/venue_id/#{cinema_id}/" \
+        "date_from/#{date}"
+
       response = JSON.parse(Excon.get(url).body)
 
       showings = []
