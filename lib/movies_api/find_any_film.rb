@@ -97,12 +97,12 @@ module MoviesApi
       raw = result.search(".cinemaAddress").first.children.children.to_s
 
       raw = raw.gsub(%r{<strong>Address:<\/strong><br>}, "").strip
-      address = ""
+      address = []
       raw.split("<br>").each do |component|
         address << "#{component.strip} "
       end
 
-      address
+      address.join
     end
 
     # Set the info fields on a Cinema from a Mechanize::Page object.
