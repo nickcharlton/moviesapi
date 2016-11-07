@@ -34,9 +34,10 @@ module MoviesApi
     #
     # Show Listings for Cinemas
     #
-    get "/cinemas/:venue_id/showings" do
+    get "/cinemas/:venue_id/showings/?:date?" do
       faf = FindAnyFilm.new
-      showings = faf.find_cinema_showings(params[:venue_id])
+      date = params[:date] || Date.today.strftime("%Y-%m-%d")
+      showings = faf.find_cinema_showings(params[:venue_id], Date.parse(date))
 
       # this is technically showing films, not showings
       # so, we're, badly, flipping it back to the original implementation
