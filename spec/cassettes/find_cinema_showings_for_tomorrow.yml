@@ -1,0 +1,58 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://www.findanyfilm.com/api/screenings/by_venue_id/venue_id/7955/date_from/2016-11-14
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - excon/0.51.0
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Cache-Control:
+      - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+      Content-Type:
+      - application/json
+      Date:
+      - Sun, 13 Nov 2016 22:47:21 GMT
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - nginx/1.8.1
+      Set-Cookie:
+      - ci_session=bf49d6859a1dba807e8f6e70776f260019b24c58; expires=Mon, 14-Nov-2016
+        00:47:21 GMT; Max-Age=7200; path=/; HttpOnly
+      Vary:
+      - Accept-Encoding
+      X-Powered-By:
+      - PHP/5.5.26
+      Content-Length:
+      - '2844'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"7955":{"name":"ArtHouse Crouch End","address1":"159A Tottenham Ln","towncity":"London","show_towncity":true,"postcode":"N8
+        9BT","website":"http:\/\/arthousecrouchend.savoysystems.co.uk\/ArtHouseCrouchEnd.dll","phone":"020
+        8245 3099","distance":"-1","lat":"51.581852","lon":"-0.122228","films":{"146186":{"showings":[{"enabled":true,"showtime":"2016-11-14
+        12:00:00","display_showtime":"12:00","ticketing_link":"http:\/\/arthousecrouchend.savoysystems.co.uk\/ArtHouseCrouchEnd.dll\/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_3507581.TcsSection_11158"},{"enabled":true,"showtime":"2016-11-14
+        17:30:00","display_showtime":"17:30","ticketing_link":"http:\/\/arthousecrouchend.savoysystems.co.uk\/ArtHouseCrouchEnd.dll\/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_3507585.TcsSection_11158"}],"film_data":{"film_id":"146186","film_title":"A
+        Street Cat Named Bob","release_year":"2016","has_3d_version":"0","certificate":"12A","slug":"A-Street-Cat-Named-Bob"}},"148367":{"showings":[{"enabled":true,"showtime":"2016-11-14
+        12:30:00","display_showtime":"12:30","ticketing_link":"http:\/\/arthousecrouchend.savoysystems.co.uk\/ArtHouseCrouchEnd.dll\/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_3507704"},{"enabled":true,"showtime":"2016-11-14
+        18:00:00","display_showtime":"18:00","ticketing_link":"http:\/\/arthousecrouchend.savoysystems.co.uk\/ArtHouseCrouchEnd.dll\/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_3507710"}],"film_data":{"film_id":"148367","film_title":"I,
+        Daniel Blake","release_year":"2016","has_3d_version":"0","certificate":"15","slug":"I--Daniel-Blake"}},"148102":{"showings":[{"enabled":true,"showtime":"2016-11-14
+        14:30:00","display_showtime":"14:30","ticketing_link":"http:\/\/arthousecrouchend.savoysystems.co.uk\/ArtHouseCrouchEnd.dll\/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_3507583.TcsSection_11158"},{"enabled":true,"showtime":"2016-11-14
+        20:45:00","display_showtime":"20:45","ticketing_link":"http:\/\/arthousecrouchend.savoysystems.co.uk\/ArtHouseCrouchEnd.dll\/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_3507713"}],"film_data":{"film_id":"148102","film_title":"Nocturnal
+        Animals","release_year":"2016","has_3d_version":"0","certificate":"15","slug":"Nocturnal-Animals"}},"101805":{"showings":[{"enabled":true,"showtime":"2016-11-14
+        15:00:00","display_showtime":"15:00","ticketing_link":"http:\/\/arthousecrouchend.savoysystems.co.uk\/ArtHouseCrouchEnd.dll\/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_3507707"}],"film_data":{"film_id":"101805","film_title":"The
+        Light Between Oceans","release_year":"2016","has_3d_version":"0","certificate":"12A","slug":"The-Light-Between-Oceans"}}}}}'
+    http_version: 
+  recorded_at: Sun, 13 Nov 2016 22:47:21 GMT
+recorded_with: VCR 3.0.3
