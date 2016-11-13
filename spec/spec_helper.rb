@@ -1,14 +1,19 @@
-# frozen_string_literal: true
-ENV["RACK_ENV"] = "test"
+require "rack/test"
+require "rspec"
+require "pry"
 
-require "codeclimate-test-reporter"
-CodeClimate::TestReporter.start
-
-require "minitest/autorun"
-require "minitest/pride"
-
-# pull in the VCR setup
 require File.expand_path "./support/vcr_setup.rb", __dir__
 
-# pull in the code to test
-require File.expand_path "../movies.rb", __dir__
+require File.expand_path "../../lib/movies_api", __FILE__
+
+ENV["RACK_ENV"] = "test"
+
+module RSpecMixin
+  include Rack::Test::Methods
+
+  def app
+    MoviesApi::App
+  end
+end
+
+RSpec.configure { |c| c.include RSpecMixin }

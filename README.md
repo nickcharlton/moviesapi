@@ -1,9 +1,6 @@
 # moviesapi
 
 [![Build Status](https://travis-ci.org/nickcharlton/moviesapi.svg?branch=master)](https://travis-ci.org/nickcharlton/moviesapi)
-[![Code Climate](https://codeclimate.com/github/nickcharlton/moviesapi/badges/gpa.svg)](https://codeclimate.com/github/nickcharlton/moviesapi)
-[![Test Coverage](https://codeclimate.com/github/nickcharlton/moviesapi/badges/coverage.svg)](https://codeclimate.com/github/nickcharlton/moviesapi)
-[![Dependency Status](https://gemnasium.com/nickcharlton/moviesapi.svg)](https://gemnasium.com/nickcharlton/moviesapi)
 
 Accessing movie data and up-to-date cinema listings is unreasonably hard.
 

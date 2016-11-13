@@ -1,4 +1,3 @@
-# frozen_string_literal: true
 source "https://rubygems.org"
 
 ruby "2.3.1"
@@ -18,8 +17,9 @@ gem "rake", "~> 11.2"
 gem "sentry-raven", "~> 1.2"
 
 group :development, :test do
-  gem "minitest", "~> 5.7"
-  gem "webmock", "~> 2.1"
-  gem "vcr", "~> 3.0"
-  gem "codeclimate-test-reporter", require: nil
+  gem "rack-test"
+  gem "rspec"
+  gem "pry"
+  gem "webmock"
+  gem "vcr"
 end
