@@ -22,4 +22,5 @@ group :development, :test do
   gem "pry"
   gem "webmock"
   gem "vcr"
+  gem "timecop"
 end

@@ -6,10 +6,12 @@ RSpec.describe "Showings" do
   describe "GET /cinemas/:venue_id/showings" do
     it "returns showings for a cinema" do
       VCR.use_cassette("request_showings") do
-        get "/cinemas/7955/showings"
+        Timecop.freeze(2016, 11, 14) do
+          get "/cinemas/7955/showings"
 
-        expect(json[0]["title"]).to eq("A Street Cat Named Bob")
-        expect(json[0]["time"]).to eq(["12:00", "17:30"])
+          expect(json[0]["title"]).to eq("A Street Cat Named Bob")
+          expect(json[0]["time"]).to eq(["12:00", "17:30"])
+        end
       end
     end
 

@@ -23,21 +23,23 @@ RSpec.describe MoviesApi::FindAnyFilm do
   describe "find_cinema_showings" do
     it "returns showings for a cinema for today" do
       VCR.use_cassette("find_cinema_showings_for_today") do
-        showings = faf.find_cinema_showings("7955")
+        Timecop.freeze(2016, 11, 14) do
+          showings = faf.find_cinema_showings("7955")
 
-        showing = showings.first
-        expect(showing.id).to eq("7955_146186_20161114120000")
-        expect(showing.cinema_id).to eq("7955")
-        expect(showing.film_id).to eq("146186")
-        expect(showing.start_time).to eq(DateTime.new(2016, 11, 14, 12, 0, 0))
-        expect(showing.booking_url).to include("http://arthousecrouchend")
+          showing = showings.first
+          expect(showing.id).to eq("7955_146186_20161114120000")
+          expect(showing.cinema_id).to eq("7955")
+          expect(showing.film_id).to eq("146186")
+          expect(showing.start_time).to eq(DateTime.new(2016, 11, 14, 12, 0, 0))
+          expect(showing.booking_url).to include("http://arthousecrouchend")
 
-        film = showing.film
-        expect(film.id).to eq("146186")
-        expect(film.title).to eq("A Street Cat Named Bob")
-        expect(film.release_year).to eq("2016")
-        expect(film.available_in_3d).to eq("0")
-        expect(film.certificate).to eq("12A")
+          film = showing.film
+          expect(film.id).to eq("146186")
+          expect(film.title).to eq("A Street Cat Named Bob")
+          expect(film.release_year).to eq("2016")
+          expect(film.available_in_3d).to eq("0")
+          expect(film.certificate).to eq("12A")
+        end
       end
     end
 
