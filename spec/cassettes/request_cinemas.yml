@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://www.findanyfilm.com/find-cinema-tickets?townpostcode=N89BT
+    uri: https://www.findanyfilm.com/find-cinema-tickets?townpostcode=N89BT
     body:
       encoding: US-ASCII
       string: ''

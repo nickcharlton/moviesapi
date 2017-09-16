@@ -2,7 +2,7 @@
 module MoviesApi
   # A source for fetching data from FindAnyFilm.com.
   class FindAnyFilm
-    BASE_URL = "http://www.findanyfilm.com"
+    BASE_URL = "https://www.findanyfilm.com"
 
     attr_reader :agent
 

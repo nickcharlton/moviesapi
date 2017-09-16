@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://www.findanyfilm.com/api/screenings/by_venue_id/venue_id/7955/date_from/2016-11-17
+    uri: https://www.findanyfilm.com/api/screenings/by_venue_id/venue_id/7955/date_from/2016-11-17
     body:
       encoding: US-ASCII
       string: ''
