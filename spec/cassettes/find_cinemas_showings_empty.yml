@@ -1,0 +1,48 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.findanyfilm.com/api/screenings/by_venue_id/venue_id/10403/date_from/2017-10-13
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - excon/0.51.0
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Date:
+      - Fri, 13 Oct 2017 15:33:14 GMT
+      Content-Type:
+      - application/json
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=dbc74f606b670bf5e7d87b4409cdee1bd1507908794; expires=Sat, 13-Oct-18
+        15:33:14 GMT; path=/; domain=.findanyfilm.com; HttpOnly; Secure, findanyfilm=0sf6dngf2nf1um0acq1fc7aoqc4irih6;
+        expires=Fri, 13-Oct-2017 17:33:14 GMT; Max-Age=7200; path=/; HttpOnly
+      Cache-Control:
+      - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      P3p:
+      - CP="ALL ADM DEV PSAi COM OUR OTRo STP IND ONL"
+      Pragma:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      X-Powered-By:
+      - PHP/5.5.26
+      Server:
+      - cloudflare-nginx
+      Cf-Ray:
+      - 3ad35b2baaf869d1-LHR
+    body:
+      encoding: UTF-8
+      string: 'false'
+    http_version: 
+  recorded_at: Thu, 12 Oct 2017 23:00:00 GMT
+recorded_with: VCR 3.0.3

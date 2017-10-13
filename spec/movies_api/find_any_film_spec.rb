@@ -52,6 +52,16 @@ RSpec.describe MoviesApi::FindAnyFilm do
         expect(showing.start_time).to eq(DateTime.new(2016, 11, 14, 12, 0, 0))
       end
     end
+
+    it "returns an empty array if there's no showings" do
+      VCR.use_cassette("find_cinemas_showings_empty") do
+        Timecop.freeze(2017, 10, 13) do
+          showings = faf.find_cinema_showings("10403")
+
+          expect(showings).to eq([])
+        end
+      end
+    end
   end
 
   describe "find_featured_films" do

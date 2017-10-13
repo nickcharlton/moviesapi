@@ -38,7 +38,10 @@ module MoviesApi
       url = "#{BASE_URL}/api/screenings/by_venue_id/venue_id/#{cinema_id}/" \
         "date_from/#{date}"
 
-      response = JSON.parse(Excon.get(url).body)
+      request = Excon.get(url)
+      return [] if request.body == "false"
+
+      response = JSON.parse(request.body)
 
       showings = []
 
