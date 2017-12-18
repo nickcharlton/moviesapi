@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-ruby "2.3.1"
+ruby "2.4.3"
 
 # sinatra and friends
 gem "sinatra", "~> 1.4"
