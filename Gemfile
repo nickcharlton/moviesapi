@@ -8,7 +8,7 @@ gem "sinatra-param"
 
 # requests
 gem "mechanize"
-gem "excon", "~> 0.45"
+gem "excon"
 
 # tasks
 gem "rake", "~> 11.2"
