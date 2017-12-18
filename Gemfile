@@ -14,7 +14,7 @@ gem "excon"
 gem "rake"
 
 # error handling
-gem "sentry-raven", "~> 1.2"
+gem "sentry-raven"
 
 group :development, :test do
   gem "rack-test"
