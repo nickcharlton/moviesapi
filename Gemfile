@@ -7,7 +7,7 @@ gem "sinatra"
 gem "sinatra-param"
 
 # requests
-gem "mechanize", "~> 2.7"
+gem "mechanize"
 gem "excon", "~> 0.45"
 
 # tasks
