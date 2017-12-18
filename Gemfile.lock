@@ -43,7 +43,7 @@ GEM
       rack
     rack-test (0.6.3)
       rack (>= 1.0)
-    rake (11.2.2)
+    rake (12.3.0)
     rspec (3.5.0)
       rspec-core (~> 3.5.0)
       rspec-expectations (~> 3.5.0)
@@ -87,7 +87,7 @@ DEPENDENCIES
   mechanize
   pry
   rack-test
-  rake (~> 11.2)
+  rake
   rspec
   sentry-raven (~> 1.2)
   sinatra

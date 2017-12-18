@@ -11,7 +11,7 @@ gem "mechanize"
 gem "excon"
 
 # tasks
-gem "rake", "~> 11.2"
+gem "rake"
 
 # error handling
 gem "sentry-raven", "~> 1.2"
