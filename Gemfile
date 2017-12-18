@@ -3,7 +3,7 @@ source "https://rubygems.org"
 ruby "2.4.3"
 
 # sinatra and friends
-gem "sinatra", "~> 1.4"
+gem "sinatra"
 gem "sinatra-param", "~> 1.4"
 
 # requests
