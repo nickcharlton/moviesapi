@@ -4,7 +4,7 @@ ruby "2.4.3"
 
 # sinatra and friends
 gem "sinatra"
-gem "sinatra-param", "~> 1.4"
+gem "sinatra-param"
 
 # requests
 gem "mechanize", "~> 2.7"

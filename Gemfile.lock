@@ -91,7 +91,7 @@ DEPENDENCIES
   rspec
   sentry-raven (~> 1.2)
   sinatra
-  sinatra-param (~> 1.4)
+  sinatra-param
   timecop
   vcr
   webmock
