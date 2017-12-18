@@ -2,25 +2,18 @@ source "https://rubygems.org"
 
 ruby "2.4.3"
 
-# sinatra and friends
+gem "excon"
+gem "mechanize"
+gem "rake"
+gem "sentry-raven"
 gem "sinatra"
 gem "sinatra-param"
 
-# requests
-gem "mechanize"
-gem "excon"
-
-# tasks
-gem "rake"
-
-# error handling
-gem "sentry-raven"
-
 group :development, :test do
+  gem "pry"
   gem "rack-test"
   gem "rspec"
-  gem "pry"
-  gem "webmock"
-  gem "vcr"
   gem "timecop"
+  gem "vcr"
+  gem "webmock"
 end
