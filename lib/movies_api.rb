@@ -2,11 +2,13 @@
 require "date"
 require "json"
 require "sinatra/base"
+require "sinatra/custom_logger"
 require "tilt/erb"
 require "sinatra/param"
 require "raven"
 require "mechanize"
 require "excon"
+require "timber"
 
 require "movies_api/resource"
 require "movies_api/cinema"
