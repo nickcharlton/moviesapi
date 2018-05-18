@@ -1,6 +1,8 @@
 require File.expand_path "../../spec_helper.rb", __FILE__
 
 RSpec.describe MoviesApi::FindAnyFilm do
+  WESTFIELD_HAMMERSMITH = "6919".freeze
+
   let(:faf) { described_class.new }
 
   describe "find_cinemas" do
@@ -60,6 +62,14 @@ RSpec.describe MoviesApi::FindAnyFilm do
 
           expect(showings).to eq([])
         end
+      end
+    end
+
+    it "skips films with erroneous data" do
+      VCR.use_cassette("find_cinema_showings_erroneous_film") do
+        showings = faf.find_cinema_showings(WESTFIELD_HAMMERSMITH)
+
+        expect(showings.count).to eq(102)
       end
     end
   end

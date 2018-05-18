@@ -48,6 +48,8 @@ module MoviesApi
       response[cinema_id]["films"].each do |_k, v|
         film = film_from_json(v)
 
+        next unless film
+
         v["showings"].each do |raw_showing|
           start_time = DateTime.parse(raw_showing["showtime"])
 
@@ -133,6 +135,10 @@ module MoviesApi
     # Build a `Film` object from JSON source.
     def film_from_json(json)
       film_data = json["film_data"]
+
+      # erroneous records are missing data in `film_data`
+      return nil unless film_data
+
       Film.new(id: film_data["film_id"],
                title: film_data["film_title"],
                release_year: film_data["release_year"],

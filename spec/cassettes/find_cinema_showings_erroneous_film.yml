@@ -1,0 +1,177 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.findanyfilm.com/api/screenings/by_venue_id/venue_id/6919/date_from/2018-05-18
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - excon/0.60.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 18 May 2018 10:23:39 GMT
+      Content-Type:
+      - application/json
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=dcffc575812e7aadeda6ac20757b471a51526639019; expires=Sat, 18-May-19
+        10:23:39 GMT; path=/; domain=.findanyfilm.com; HttpOnly; Secure, findanyfilm=slgpe03no9h39qravkf15ot84n4st7ro;
+        expires=Fri, 18-May-2018 12:23:39 GMT; Max-Age=7200; path=/; HttpOnly
+      Cache-Control:
+      - no-store, no-cache, must-revalidate
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      P3p:
+      - CP="ALL ADM DEV PSAi COM OUR OTRo STP IND ONL"
+      Pragma:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      X-Powered-By:
+      - PHP/7.0.29
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 41cd9c0f1dce0cb3-LHR
+    body:
+      encoding: ASCII-8BIT
+      string: '{"6919":{"name":"VUE Westfield London","address1":"Westfield London,
+        <br \/> Ariel Way, <br \/> London","towncity":"Hammersmith","show_towncity":true,"postcode":"W12
+        7GF","website":"https:\/\/www.myvue.com\/cinema\/westfield?SC_CMP=AFF_indtrust","phone":"","distance":"-1","lat":"51.507446","lon":"-0.220016","films":{"155734":{"showings":[{"enabled":false,"showtime":"2018-05-18
+        00:00:00","display_showtime":"00:00","ticketing_link":"https:\/\/www.myvue.com\/book-tickets\/summary\/10072\/163254\/272839?SC_CMP=AFF_indtrust"},{"enabled":false,"showtime":"2018-05-18
+        09:45:00","display_showtime":"09:45","ticketing_link":"https:\/\/www.myvue.com\/book-tickets\/summary\/10072\/163254\/270364?SC_CMP=AFF_indtrust"},{"enabled":true,"showtime":"2018-05-18
+        11:00:00","display_showtime":"11:00","ticketing_link":"https:\/\/www.myvue.com\/book-tickets\/summary\/10072\/163254\/273894?SC_CMP=AFF_indtrust"},{"enabled":true,"showtime":"2018-05-18
+        11:45:00","display_showtime":"11:45","ticketing_link":"https:\/\/www.myvue.com\/book-tickets\/summary\/10072\/163254\/270369?SC_CMP=AFF_indtrust"},{"enabled":true,"showtime":"2018-05-18
+        12:30:00","display_showtime":"12:30","ticketing_link":"https:\/\/www.myvue.com\/book-tickets\/summary\/10072\/163254\/270365?SC_CMP=AFF_indtrust"},{"enabled":true,"showtime":"2018-05-18
+        13:25:00","display_showtime":"13:25","ticketing_link":"https:\/\/www.myvue.com\/book-tickets\/summary\/10072\/163254\/273346?SC_CMP=AFF_indtrust"},{"enabled":true,"showtime":"2018-05-18
+        14:00:00","display_showtime":"14:00","ticketing_link":"https:\/\/www.myvue.com\/book-tickets\/summary\/10072\/163254\/273893?SC_CMP=AFF_indtrust"},{"enabled":true,"showtime":"2018-05-18
+        14:30:00","display_showtime":"14:30","ticketing_link":"https:\/\/www.myvue.com\/book-tickets\/summary\/10072\/163254\/270370?SC_CMP=AFF_indtrust"},{"enabled":true,"showtime":"2018-05-18
+        15:15:00","display_showtime":"15:15","ticketing_link":"https:\/\/www.myvue.com\/book-tickets\/summary\/10072\/163254\/270366?SC_CMP=AFF_indtrust"},{"enabled":true,"showtime":"2018-05-18
+        16:15:00","display_showtime":"16:15","ticketing_link":"https:\/\/www.myvue.com\/book-tickets\/summary\/10072\/163254\/270355?SC_CMP=AFF_indtrust"},{"enabled":true,"showtime":"2018-05-18
+        16:45:00","display_showtime":"16:45","ticketing_link":"https:\/\/www.myvue.com\/book-tickets\/summary\/10072\/163254\/273891?SC_CMP=AFF_indtrust"},{"enabled":true,"showtime":"2018-05-18
+        17:15:00","display_showtime":"17:15","ticketing_link":"https:\/\/www.myvue.com\/book-tickets\/summary\/10072\/163254\/270371?SC_CMP=AFF_indtrust"},{"enabled":true,"showtime":"2018-05-18
+        18:00:00","display_showtime":"18:00","ticketing_link":"https:\/\/www.myvue.com\/book-tickets\/summary\/10072\/163254\/270367?SC_CMP=AFF_indtrust"},{"enabled":true,"showtime":"2018-05-18
+        18:30:00","display_showtime":"18:30","ticketing_link":"https:\/\/www.myvue.com\/book-tickets\/summary\/10072\/163254\/270358?SC_CMP=AFF_indtrust"},{"enabled":true,"showtime":"2018-05-18
+        19:00:00","display_showtime":"19:00","ticketing_link":"https:\/\/www.myvue.com\/book-tickets\/summary\/10072\/163254\/270356?SC_CMP=AFF_indtrust"},{"enabled":true,"showtime":"2018-05-18
+        19:30:00","display_showtime":"19:30","ticketing_link":"https:\/\/www.myvue.com\/book-tickets\/summary\/10072\/163254\/270362?SC_CMP=AFF_indtrust"},{"enabled":true,"showtime":"2018-05-18
+        19:45:00","display_showtime":"19:45","ticketing_link":"https:\/\/www.myvue.com\/book-tickets\/summary\/10072\/163254\/273892?SC_CMP=AFF_indtrust"},{"enabled":true,"showtime":"2018-05-18
+        20:00:00","display_showtime":"20:00","ticketing_link":"https:\/\/www.myvue.com\/book-tickets\/summary\/10072\/163254\/270372?SC_CMP=AFF_indtrust"},{"enabled":true,"showtime":"2018-05-18
+        20:30:00","display_showtime":"20:30","ticketing_link":"https:\/\/www.myvue.com\/book-tickets\/summary\/10072\/163254\/270360?SC_CMP=AFF_indtrust"},{"enabled":true,"showtime":"2018-05-18
+        21:00:00","display_showtime":"21:00","ticketing_link":"https:\/\/www.myvue.com\/book-tickets\/summary\/10072\/163254\/270368?SC_CMP=AFF_indtrust"},{"enabled":true,"showtime":"2018-05-18
+        21:30:00","display_showtime":"21:30","ticketing_link":"https:\/\/www.myvue.com\/book-tickets\/summary\/10072\/163254\/270359?SC_CMP=AFF_indtrust"},{"enabled":true,"showtime":"2018-05-18
+        22:00:00","display_showtime":"22:00","ticketing_link":"https:\/\/www.myvue.com\/book-tickets\/summary\/10072\/163254\/270357?SC_CMP=AFF_indtrust"},{"enabled":true,"showtime":"2018-05-18
+        22:30:00","display_showtime":"22:30","ticketing_link":"https:\/\/www.myvue.com\/book-tickets\/summary\/10072\/163254\/270363?SC_CMP=AFF_indtrust"},{"enabled":true,"showtime":"2018-05-18
+        22:45:00","display_showtime":"22:45","ticketing_link":"https:\/\/www.myvue.com\/book-tickets\/summary\/10072\/163254\/270373?SC_CMP=AFF_indtrust"},{"enabled":true,"showtime":"2018-05-18
+        23:15:00","display_showtime":"23:15","ticketing_link":"https:\/\/www.myvue.com\/book-tickets\/summary\/10072\/163254\/270361?SC_CMP=AFF_indtrust"}],"film_data":{"film_id":"155734","film_title":"Deadpool
+        2","release_year":"2018","has_3d_version":"0","certificate":"15","slug":"Deadpool-2","has_broadcast":"no"}},"160148":{"showings":[{"enabled":false,"showtime":"2018-05-18
+        09:55:00","display_showtime":"09:55","ticketing_link":"https:\/\/www.myvue.com\/book-tickets\/summary\/10072\/247336\/273775?SC_CMP=AFF_indtrust"},{"enabled":true,"showtime":"2018-05-18
+        11:15:00","display_showtime":"11:15","ticketing_link":"https:\/\/www.myvue.com\/book-tickets\/summary\/10072\/247336\/273906?SC_CMP=AFF_indtrust"},{"enabled":true,"showtime":"2018-05-18
+        12:05:00","display_showtime":"12:05","ticketing_link":"https:\/\/www.myvue.com\/book-tickets\/summary\/10072\/247336\/273696?SC_CMP=AFF_indtrust"},{"enabled":true,"showtime":"2018-05-18
+        14:50:00","display_showtime":"14:50","ticketing_link":"https:\/\/www.myvue.com\/book-tickets\/summary\/10072\/247336\/273427?SC_CMP=AFF_indtrust"},{"enabled":true,"showtime":"2018-05-18
+        16:55:00","display_showtime":"16:55","ticketing_link":"https:\/\/www.myvue.com\/book-tickets\/summary\/10072\/247336\/273698?SC_CMP=AFF_indtrust"},{"enabled":true,"showtime":"2018-05-18
+        18:15:00","display_showtime":"18:15","ticketing_link":"https:\/\/www.myvue.com\/book-tickets\/summary\/10072\/247336\/273399?SC_CMP=AFF_indtrust"},{"enabled":true,"showtime":"2018-05-18
+        20:20:00","display_showtime":"20:20","ticketing_link":"https:\/\/www.myvue.com\/book-tickets\/summary\/10072\/247336\/273662?SC_CMP=AFF_indtrust"},{"enabled":true,"showtime":"2018-05-18
+        22:20:00","display_showtime":"22:20","ticketing_link":"https:\/\/www.myvue.com\/book-tickets\/summary\/10072\/247336\/273513?SC_CMP=AFF_indtrust"}],"film_data":{"film_id":"160148","film_title":"Breaking
+        In","release_year":"2018","has_3d_version":"0","certificate":"15","slug":"breaking
+        in","has_broadcast":"no"}},"154700":{"showings":[{"enabled":false,"showtime":"2018-05-18
+        10:00:00","display_showtime":"10:00","ticketing_link":"https:\/\/www.myvue.com\/book-tickets\/summary\/10072\/217267\/273658?SC_CMP=AFF_indtrust"}],"film_data":{"film_id":"154700","film_title":"Tully","release_year":"2018","has_3d_version":"0","certificate":"15","slug":"tully","has_broadcast":"no"}},"161628":{"showings":[{"enabled":false,"showtime":"2018-05-18
+        10:10:00","display_showtime":"10:10","ticketing_link":"https:\/\/www.myvue.com\/book-tickets\/summary\/10072\/227039\/273396?SC_CMP=AFF_indtrust"},{"enabled":true,"showtime":"2018-05-18
+        14:00:00","display_showtime":"14:00","ticketing_link":"https:\/\/www.myvue.com\/book-tickets\/summary\/10072\/227039\/273510?SC_CMP=AFF_indtrust"},{"enabled":true,"showtime":"2018-05-18
+        16:05:00","display_showtime":"16:05","ticketing_link":"https:\/\/www.myvue.com\/book-tickets\/summary\/10072\/227039\/273584?SC_CMP=AFF_indtrust"}],"film_data":{"film_id":"161628","film_title":"Revenge","release_year":"2017","has_3d_version":"0","certificate":"TBC","slug":"Revenge","has_broadcast":"no"}},"160149":{"showings":[{"enabled":false,"showtime":"2018-05-18
+        10:10:00","display_showtime":"10:10","ticketing_link":"https:\/\/www.myvue.com\/book-tickets\/summary\/10072\/227039\/273396?SC_CMP=AFF_indtrust"},{"enabled":true,"showtime":"2018-05-18
+        14:00:00","display_showtime":"14:00","ticketing_link":"https:\/\/www.myvue.com\/book-tickets\/summary\/10072\/227039\/273510?SC_CMP=AFF_indtrust"},{"enabled":true,"showtime":"2018-05-18
+        16:05:00","display_showtime":"16:05","ticketing_link":"https:\/\/www.myvue.com\/book-tickets\/summary\/10072\/227039\/273584?SC_CMP=AFF_indtrust"}],"film_data":false},"159595":{"showings":[{"enabled":false,"showtime":"2018-05-18
+        10:15:00","display_showtime":"10:15","ticketing_link":"https:\/\/www.myvue.com\/book-tickets\/summary\/10072\/169302\/273509?SC_CMP=AFF_indtrust"},{"enabled":true,"showtime":"2018-05-18
+        11:00:00","display_showtime":"11:00","ticketing_link":"https:\/\/www.myvue.com\/book-tickets\/summary\/10072\/174252\/273618?SC_CMP=AFF_indtrust"},{"enabled":true,"showtime":"2018-05-18
+        11:35:00","display_showtime":"11:35","ticketing_link":"https:\/\/www.myvue.com\/book-tickets\/summary\/10072\/169302\/273853?SC_CMP=AFF_indtrust"},{"enabled":true,"showtime":"2018-05-18
+        13:15:00","display_showtime":"13:15","ticketing_link":"https:\/\/www.myvue.com\/book-tickets\/summary\/10072\/169302\/273548?SC_CMP=AFF_indtrust"},{"enabled":true,"showtime":"2018-05-18
+        14:00:00","display_showtime":"14:00","ticketing_link":"https:\/\/www.myvue.com\/book-tickets\/summary\/10072\/169302\/273898?SC_CMP=AFF_indtrust"},{"enabled":true,"showtime":"2018-05-18
+        14:35:00","display_showtime":"14:35","ticketing_link":"https:\/\/www.myvue.com\/book-tickets\/summary\/10072\/169302\/273461?SC_CMP=AFF_indtrust"},{"enabled":true,"showtime":"2018-05-18
+        15:05:00","display_showtime":"15:05","ticketing_link":"https:\/\/www.myvue.com\/book-tickets\/summary\/10072\/169302\/273368?SC_CMP=AFF_indtrust"},{"enabled":true,"showtime":"2018-05-18
+        15:50:00","display_showtime":"15:50","ticketing_link":"https:\/\/www.myvue.com\/book-tickets\/summary\/10072\/169302\/273737?SC_CMP=AFF_indtrust"},{"enabled":true,"showtime":"2018-05-18
+        16:50:00","display_showtime":"16:50","ticketing_link":"https:\/\/www.myvue.com\/book-tickets\/summary\/10072\/169302\/273549?SC_CMP=AFF_indtrust"},{"enabled":true,"showtime":"2018-05-18
+        17:30:00","display_showtime":"17:30","ticketing_link":"https:\/\/www.myvue.com\/book-tickets\/summary\/10072\/169302\/273855?SC_CMP=AFF_indtrust"},{"enabled":true,"showtime":"2018-05-18
+        18:00:00","display_showtime":"18:00","ticketing_link":"https:\/\/www.myvue.com\/book-tickets\/summary\/10072\/169302\/273897?SC_CMP=AFF_indtrust"},{"enabled":true,"showtime":"2018-05-18
+        18:50:00","display_showtime":"18:50","ticketing_link":"https:\/\/www.myvue.com\/book-tickets\/summary\/10072\/169302\/273621?SC_CMP=AFF_indtrust"},{"enabled":true,"showtime":"2018-05-18
+        20:10:00","display_showtime":"20:10","ticketing_link":"https:\/\/www.myvue.com\/book-tickets\/summary\/10072\/169302\/273550?SC_CMP=AFF_indtrust"},{"enabled":true,"showtime":"2018-05-18
+        20:40:00","display_showtime":"20:40","ticketing_link":"https:\/\/www.myvue.com\/book-tickets\/summary\/10072\/169302\/273902?SC_CMP=AFF_indtrust"},{"enabled":true,"showtime":"2018-05-18
+        21:15:00","display_showtime":"21:15","ticketing_link":"https:\/\/www.myvue.com\/book-tickets\/summary\/10072\/169302\/273586?SC_CMP=AFF_indtrust"},{"enabled":true,"showtime":"2018-05-18
+        22:15:00","display_showtime":"22:15","ticketing_link":"https:\/\/www.myvue.com\/book-tickets\/summary\/10072\/169302\/273622?SC_CMP=AFF_indtrust"},{"enabled":true,"showtime":"2018-05-18
+        22:45:00","display_showtime":"22:45","ticketing_link":"https:\/\/www.myvue.com\/book-tickets\/summary\/10072\/169302\/273895?SC_CMP=AFF_indtrust"},{"enabled":true,"showtime":"2018-05-18
+        23:25:00","display_showtime":"23:25","ticketing_link":"https:\/\/www.myvue.com\/book-tickets\/summary\/10072\/169302\/273857?SC_CMP=AFF_indtrust"}],"film_data":{"film_id":"159595","film_title":"Avengers:
+        Infinity War","release_year":"2018","has_3d_version":"0","certificate":"TBC","slug":"Avengers--Infinity-War","has_broadcast":"no"}},"157748":{"showings":[{"enabled":true,"showtime":"2018-05-18
+        10:25:00","display_showtime":"10:25","ticketing_link":"https:\/\/www.myvue.com\/book-tickets\/summary\/10072\/228766\/273814?SC_CMP=AFF_indtrust"},{"enabled":true,"showtime":"2018-05-18
+        13:40:00","display_showtime":"13:40","ticketing_link":"https:\/\/www.myvue.com\/book-tickets\/summary\/10072\/228766\/273815?SC_CMP=AFF_indtrust"},{"enabled":true,"showtime":"2018-05-18
+        17:45:00","display_showtime":"17:45","ticketing_link":"https:\/\/www.myvue.com\/book-tickets\/summary\/10072\/228766\/273778?SC_CMP=AFF_indtrust"}],"film_data":{"film_id":"157748","film_title":"The
+        Guernsey Literary & Potato Peel Pie Society","release_year":"2018","has_3d_version":"0","certificate":"12A","slug":"guernsey
+        literary and potato peel pie society the","has_broadcast":"no"}},"154493":{"showings":[{"enabled":true,"showtime":"2018-05-18
+        10:30:00","display_showtime":"10:30","ticketing_link":"https:\/\/www.myvue.com\/book-tickets\/summary\/10072\/197438\/273366?SC_CMP=AFF_indtrust"},{"enabled":true,"showtime":"2018-05-18
+        12:15:00","display_showtime":"12:15","ticketing_link":"https:\/\/www.myvue.com\/book-tickets\/summary\/10072\/197438\/273776?SC_CMP=AFF_indtrust"},{"enabled":true,"showtime":"2018-05-18
+        14:15:00","display_showtime":"14:15","ticketing_link":"https:\/\/www.myvue.com\/book-tickets\/summary\/10072\/197438\/273619?SC_CMP=AFF_indtrust"},{"enabled":true,"showtime":"2018-05-18
+        17:05:00","display_showtime":"17:05","ticketing_link":"https:\/\/www.myvue.com\/book-tickets\/summary\/10072\/197438\/273428?SC_CMP=AFF_indtrust"}],"film_data":{"film_id":"154493","film_title":"Peter
+        Rabbit","release_year":"2018","has_3d_version":"0","certificate":"PG","slug":"Peter-Rabbit","has_broadcast":"no"}},"153462":{"showings":[{"enabled":true,"showtime":"2018-05-18
+        10:40:00","display_showtime":"10:40","ticketing_link":"https:\/\/www.myvue.com\/book-tickets\/summary\/10072\/169125\/273582?SC_CMP=AFF_indtrust"},{"enabled":true,"showtime":"2018-05-18
+        17:35:00","display_showtime":"17:35","ticketing_link":"https:\/\/www.myvue.com\/book-tickets\/summary\/10072\/169125\/273899?SC_CMP=AFF_indtrust"},{"enabled":true,"showtime":"2018-05-18
+        21:25:00","display_showtime":"21:25","ticketing_link":"https:\/\/www.myvue.com\/book-tickets\/summary\/10072\/169125\/273903?SC_CMP=AFF_indtrust"},{"enabled":true,"showtime":"2018-05-18
+        22:55:00","display_showtime":"22:55","ticketing_link":"https:\/\/www.myvue.com\/book-tickets\/summary\/10072\/169125\/273464?SC_CMP=AFF_indtrust"}],"film_data":{"film_id":"153462","film_title":"Black
+        Panther","release_year":"2018","has_3d_version":"0","certificate":"12A","slug":"Black-Panther","has_broadcast":"no"}},"154961":{"showings":[{"enabled":true,"showtime":"2018-05-18
+        10:45:00","display_showtime":"10:45","ticketing_link":"https:\/\/www.myvue.com\/book-tickets\/summary\/10072\/227426\/273735?SC_CMP=AFF_indtrust"},{"enabled":true,"showtime":"2018-05-18
+        12:50:00","display_showtime":"12:50","ticketing_link":"https:\/\/www.myvue.com\/book-tickets\/summary\/10072\/227426\/273367?SC_CMP=AFF_indtrust"},{"enabled":true,"showtime":"2018-05-18
+        16:00:00","display_showtime":"16:00","ticketing_link":"https:\/\/www.myvue.com\/book-tickets\/summary\/10072\/227426\/273398?SC_CMP=AFF_indtrust"},{"enabled":true,"showtime":"2018-05-18
+        18:05:00","display_showtime":"18:05","ticketing_link":"https:\/\/www.myvue.com\/book-tickets\/summary\/10072\/227426\/273661?SC_CMP=AFF_indtrust"},{"enabled":true,"showtime":"2018-05-18
+        19:15:00","display_showtime":"19:15","ticketing_link":"https:\/\/www.myvue.com\/book-tickets\/summary\/10072\/227426\/273817?SC_CMP=AFF_indtrust"},{"enabled":true,"showtime":"2018-05-18
+        20:35:00","display_showtime":"20:35","ticketing_link":"https:\/\/www.myvue.com\/book-tickets\/summary\/10072\/227426\/273463?SC_CMP=AFF_indtrust"},{"enabled":true,"showtime":"2018-05-18
+        22:40:00","display_showtime":"22:40","ticketing_link":"https:\/\/www.myvue.com\/book-tickets\/summary\/10072\/227426\/273663?SC_CMP=AFF_indtrust"}],"film_data":{"film_id":"154961","film_title":"A
+        Quiet Place","release_year":"2018","has_3d_version":"0","certificate":"15","slug":"A-Quiet-Place","has_broadcast":"no"}},"154953":{"showings":[{"enabled":true,"showtime":"2018-05-18
+        10:50:00","display_showtime":"10:50","ticketing_link":"https:\/\/www.myvue.com\/book-tickets\/summary\/10072\/219890\/273345?SC_CMP=AFF_indtrust"},{"enabled":true,"showtime":"2018-05-18
+        12:20:00","display_showtime":"12:20","ticketing_link":"https:\/\/www.myvue.com\/book-tickets\/summary\/10072\/219890\/273905?SC_CMP=AFF_indtrust"},{"enabled":true,"showtime":"2018-05-18
+        14:40:00","display_showtime":"14:40","ticketing_link":"https:\/\/www.myvue.com\/book-tickets\/summary\/10072\/219890\/273777?SC_CMP=AFF_indtrust"},{"enabled":true,"showtime":"2018-05-18
+        16:40:00","display_showtime":"16:40","ticketing_link":"https:\/\/www.myvue.com\/book-tickets\/summary\/10072\/219890\/273816?SC_CMP=AFF_indtrust"},{"enabled":true,"showtime":"2018-05-18
+        18:40:00","display_showtime":"18:40","ticketing_link":"https:\/\/www.myvue.com\/book-tickets\/summary\/10072\/219890\/273585?SC_CMP=AFF_indtrust"},{"enabled":true,"showtime":"2018-05-18
+        20:40:00","display_showtime":"20:40","ticketing_link":"https:\/\/www.myvue.com\/book-tickets\/summary\/10072\/219890\/273779?SC_CMP=AFF_indtrust"}],"film_data":{"film_id":"154953","film_title":"On
+        Chesil Beach","release_year":"2018","has_3d_version":"0","certificate":"15","slug":"on
+        chesil beach","has_broadcast":"no"}},"153514":{"showings":[{"enabled":true,"showtime":"2018-05-18
+        11:00:00","display_showtime":"11:00","ticketing_link":"https:\/\/www.myvue.com\/book-tickets\/summary\/10072\/194899\/273547?SC_CMP=AFF_indtrust"},{"enabled":true,"showtime":"2018-05-18
+        13:50:00","display_showtime":"13:50","ticketing_link":"https:\/\/www.myvue.com\/book-tickets\/summary\/10072\/194899\/273583?SC_CMP=AFF_indtrust"},{"enabled":true,"showtime":"2018-05-18
+        16:35:00","display_showtime":"16:35","ticketing_link":"https:\/\/www.myvue.com\/book-tickets\/summary\/10072\/194899\/273620?SC_CMP=AFF_indtrust"}],"film_data":{"film_id":"153514","film_title":"Sherlock
+        Gnomes","release_year":"2018","has_3d_version":"0","certificate":"U","slug":"Sherlock-Gnomes","has_broadcast":"no"}},"155909":{"showings":[{"enabled":true,"showtime":"2018-05-18
+        12:00:00","display_showtime":"12:00","ticketing_link":"https:\/\/www.myvue.com\/book-tickets\/summary\/10072\/234628\/273460?SC_CMP=AFF_indtrust"},{"enabled":true,"showtime":"2018-05-18
+        14:20:00","display_showtime":"14:20","ticketing_link":"https:\/\/www.myvue.com\/book-tickets\/summary\/10072\/234628\/273697?SC_CMP=AFF_indtrust"},{"enabled":true,"showtime":"2018-05-18
+        15:15:00","display_showtime":"15:15","ticketing_link":"https:\/\/www.myvue.com\/book-tickets\/summary\/10072\/234628\/273904?SC_CMP=AFF_indtrust"},{"enabled":true,"showtime":"2018-05-18
+        17:50:00","display_showtime":"17:50","ticketing_link":"https:\/\/www.myvue.com\/book-tickets\/summary\/10072\/234628\/273462?SC_CMP=AFF_indtrust"},{"enabled":true,"showtime":"2018-05-18
+        19:40:00","display_showtime":"19:40","ticketing_link":"https:\/\/www.myvue.com\/book-tickets\/summary\/10072\/234628\/273512?SC_CMP=AFF_indtrust"},{"enabled":true,"showtime":"2018-05-18
+        21:50:00","display_showtime":"21:50","ticketing_link":"https:\/\/www.myvue.com\/book-tickets\/summary\/10072\/234628\/273739?SC_CMP=AFF_indtrust"}],"film_data":{"film_id":"155909","film_title":"I
+        Feel Pretty","release_year":"2018","has_3d_version":"0","certificate":"12A","slug":"i
+        feel pretty","has_broadcast":"no"}},"152405":{"showings":[{"enabled":true,"showtime":"2018-05-18
+        12:20:00","display_showtime":"12:20","ticketing_link":"https:\/\/www.myvue.com\/book-tickets\/summary\/10072\/177965\/273426?SC_CMP=AFF_indtrust"},{"enabled":true,"showtime":"2018-05-18
+        15:00:00","display_showtime":"15:00","ticketing_link":"https:\/\/www.myvue.com\/book-tickets\/summary\/10072\/177965\/273854?SC_CMP=AFF_indtrust"}],"film_data":{"film_id":"152405","film_title":"The
+        Greatest Showman","release_year":"2017","has_3d_version":"0","certificate":"PG","slug":"The-Greatest-Showman","has_broadcast":"no"}},"154486":{"showings":[{"enabled":true,"showtime":"2018-05-18
+        12:45:00","display_showtime":"12:45","ticketing_link":"https:\/\/www.myvue.com\/book-tickets\/summary\/10072\/189170\/273397?SC_CMP=AFF_indtrust"}],"film_data":{"film_id":"154486","film_title":"Ready
+        Player One","release_year":"2018","has_3d_version":"0","certificate":"12A","slug":"Ready-Player-One","has_broadcast":"no"}},"156359":{"showings":[{"enabled":true,"showtime":"2018-05-18
+        13:00:00","display_showtime":"13:00","ticketing_link":"https:\/\/www.myvue.com\/book-tickets\/summary\/10072\/210668\/273659?SC_CMP=AFF_indtrust"},{"enabled":true,"showtime":"2018-05-18
+        17:05:00","display_showtime":"17:05","ticketing_link":"https:\/\/www.myvue.com\/book-tickets\/summary\/10072\/210668\/273511?SC_CMP=AFF_indtrust"},{"enabled":true,"showtime":"2018-05-18
+        19:20:00","display_showtime":"19:20","ticketing_link":"https:\/\/www.myvue.com\/book-tickets\/summary\/10072\/210668\/273738?SC_CMP=AFF_indtrust"},{"enabled":true,"showtime":"2018-05-18
+        21:45:00","display_showtime":"21:45","ticketing_link":"https:\/\/www.myvue.com\/book-tickets\/summary\/10072\/210668\/273700?SC_CMP=AFF_indtrust"}],"film_data":{"film_id":"156359","film_title":"Life
+        Of The Party","release_year":"2018","has_3d_version":"0","certificate":"12A","slug":"life
+        of the party","has_broadcast":"no"}},"154646":{"showings":[{"enabled":true,"showtime":"2018-05-18
+        13:00:00","display_showtime":"13:00","ticketing_link":"https:\/\/www.myvue.com\/book-tickets\/summary\/10072\/199919\/273736?SC_CMP=AFF_indtrust"},{"enabled":true,"showtime":"2018-05-18
+        15:30:00","display_showtime":"15:30","ticketing_link":"https:\/\/www.myvue.com\/book-tickets\/summary\/10072\/199919\/273660?SC_CMP=AFF_indtrust"},{"enabled":true,"showtime":"2018-05-18
+        19:10:00","display_showtime":"19:10","ticketing_link":"https:\/\/www.myvue.com\/book-tickets\/summary\/10072\/199919\/273699?SC_CMP=AFF_indtrust"},{"enabled":true,"showtime":"2018-05-18
+        21:35:00","display_showtime":"21:35","ticketing_link":"https:\/\/www.myvue.com\/book-tickets\/summary\/10072\/199919\/273818?SC_CMP=AFF_indtrust"},{"enabled":true,"showtime":"2018-05-18
+        23:40:00","display_showtime":"23:40","ticketing_link":"https:\/\/www.myvue.com\/book-tickets\/summary\/10072\/199919\/273780?SC_CMP=AFF_indtrust"}],"film_data":{"film_id":"154646","film_title":"Rampage","release_year":"2018","has_3d_version":"0","certificate":"12A","slug":"Rampage","has_broadcast":"no"}},"159515":{"showings":[{"enabled":true,"showtime":"2018-05-18
+        20:50:00","display_showtime":"20:50","ticketing_link":"https:\/\/www.myvue.com\/book-tickets\/summary\/10072\/242988\/273856?SC_CMP=AFF_indtrust"},{"enabled":true,"showtime":"2018-05-18
+        23:30:00","display_showtime":"23:30","ticketing_link":"https:\/\/www.myvue.com\/book-tickets\/summary\/10072\/242988\/273551?SC_CMP=AFF_indtrust"}],"film_data":{"film_id":"159515","film_title":"Truth
+        Or Dare","release_year":"2018","has_3d_version":"0","certificate":"15","slug":"truth
+        or dare","has_broadcast":"no"}}}}}'
+    http_version: 
+  recorded_at: Fri, 18 May 2018 10:23:39 GMT
+recorded_with: VCR 4.0.0
