@@ -47,6 +47,10 @@ module MoviesApi
     # Show Listings for Cinemas
     #
     get "/cinemas/:venue_id/showings/?:date?" do
+      param :venue_id, String, required: true,
+                               format: /^([0-9]*)$/,
+                               message: "not a valid venue_id"
+
       faf = FindAnyFilm.new
       date = params[:date] || Date.today.strftime("%Y-%m-%d")
       showings = faf.find_cinema_showings(params[:venue_id], Date.parse(date))

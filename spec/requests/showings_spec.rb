@@ -23,5 +23,12 @@ RSpec.describe "Showings" do
         expect(json[0]["time"]).to eq(["12:20", "17:45"])
       end
     end
+
+    it "validates the venue is an integer" do
+      get "/cinemas/$7955/showings"
+
+      expect(last_response).to be_bad_request
+      expect(json["message"]).to eq("not a valid venue_id")
+    end
   end
 end
