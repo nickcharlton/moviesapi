@@ -67,9 +67,11 @@ RSpec.describe MoviesApi::FindAnyFilm do
 
     it "skips films with erroneous data" do
       VCR.use_cassette("find_cinema_showings_erroneous_film") do
-        showings = faf.find_cinema_showings(WESTFIELD_HAMMERSMITH)
+        Timecop.freeze(2018, 5, 18) do
+          showings = faf.find_cinema_showings(WESTFIELD_HAMMERSMITH)
 
-        expect(showings.count).to eq(102)
+          expect(showings.count).to eq(102)
+        end
       end
     end
   end
