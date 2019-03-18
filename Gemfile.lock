@@ -79,7 +79,7 @@ GEM
       rack-protection (= 2.0.5)
       sinatra (= 2.0.5)
       tilt (>= 1.3, < 3)
-    sinatra-param (1.5.0)
+    sinatra-param (1.6.0)
       sinatra (>= 1.3)
     tilt (2.0.9)
     timber (2.6.2)
