@@ -2,6 +2,8 @@
 module MoviesApi
   # Sinatra app to give basic film showing details.
   class App < Sinatra::Base
+    POSTCODE_REGEX = /^([A-Za-z][A-Ha-hJ-Yj-y]?[0-9][A-Za-z0-9]? ?[0-9][A-Za-z]{2}|[Gg][Ii][Rr] ?0[Aa]{2})$/
+
     use Raven::Rack
 
     helpers Sinatra::CustomLogger
@@ -26,6 +28,9 @@ module MoviesApi
     # Find Nearby Cinemas by Postcode
     #
     get "/cinemas/find/:postcode" do
+      param :postcode, String, format: POSTCODE_REGEX,
+                               message: "must be a full, valid UK postcode"
+
       faf = FindAnyFilm.new
       cinemas = faf.find_cinemas(params[:postcode])
 

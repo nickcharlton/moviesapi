@@ -17,5 +17,12 @@ RSpec.describe "Cinemas" do
           ".co.uk/ArtHouseCrouchEnd.dll")
       end
     end
+
+    it "responds with an error if a postcode is not valid" do
+      get "/cinemas/find/N8"
+
+      expect(last_response).to be_bad_request
+      expect(json["message"]).to eq("must be a full, valid UK postcode")
+    end
   end
 end
