@@ -24,6 +24,13 @@ RSpec.describe "Showings" do
       end
     end
 
+    it "responds with a client error if a date is not valid" do
+      get "/cinemas/7955/showings/1"
+
+      expect(last_response).to be_bad_request
+      expect(json["message"]).to eq("not a valid date format")
+    end
+
     it "validates the venue is an integer" do
       get "/cinemas/$7955/showings"
 

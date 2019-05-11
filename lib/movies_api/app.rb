@@ -39,10 +39,12 @@ module MoviesApi
       param :venue_id, String, required: true,
                                format: /^([0-9]*)$/,
                                message: "not a valid venue_id"
+      param :date, Date, required: false,
+                         default: Date.today.strftime("%Y-%m-%d"),
+                         message: "not a valid date format"
 
       faf = FindAnyFilm.new
-      date = params[:date] || Date.today.strftime("%Y-%m-%d")
-      showings = faf.find_cinema_showings(params[:venue_id], Date.parse(date))
+      showings = faf.find_cinema_showings(params[:venue_id], params[:date])
 
       # this is technically showing films, not showings
       # so, we're, badly, flipping it back to the original implementation
