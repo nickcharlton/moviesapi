@@ -7,17 +7,6 @@ module MoviesApi
     helpers Sinatra::CustomLogger
     helpers Sinatra::Param
 
-    configure :development, :production do
-      logger = Timber::Logger.new(STDOUT)
-
-      logger.level = Logger::DEBUG if development?
-      set :logger, logger
-
-      Timber::Integrations::Rack.middlewares.each do |middleware|
-        use middleware
-      end
-    end
-
     before do
       # we almost always want a JSON output
       content_type :json

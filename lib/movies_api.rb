@@ -8,7 +8,6 @@ require "sinatra/param"
 require "raven"
 require "mechanize"
 require "excon"
-require "timber"
 
 require "movies_api/resource"
 require "movies_api/cinema"
