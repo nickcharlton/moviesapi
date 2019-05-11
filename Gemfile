@@ -9,7 +9,6 @@ gem "sentry-raven"
 gem "sinatra"
 gem "sinatra-contrib"
 gem "sinatra-param"
-gem "timber"
 
 group :development, :test do
   gem "pry"
