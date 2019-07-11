@@ -4,6 +4,7 @@ ruby "2.6.3"
 
 gem "excon"
 gem "mechanize"
+gem "rack-canonical-host"
 gem "rake"
 gem "sentry-raven"
 gem "sinatra"
