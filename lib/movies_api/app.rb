@@ -41,6 +41,10 @@ module MoviesApi
     # Show Listings for Cinemas
     #
     get "/cinemas/:venue_id/showings/?:date?" do
+      halt 500,
+           { message: "This endpoint is currently broken as " \
+              "Find Any Film has changed." }.to_json
+
       param :venue_id, String, required: true,
                                format: /^([0-9]*)$/,
                                message: "not a valid venue_id"
