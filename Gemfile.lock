@@ -64,7 +64,7 @@ GEM
       rspec-support (~> 3.9.0)
     rspec-support (3.9.0)
     safe_yaml (1.0.5)
-    sentry-raven (2.12.2)
+    sentry-raven (2.12.3)
       faraday (>= 0.7.6, < 1.0)
     sinatra (2.0.7)
       mustermann (~> 1.0)
