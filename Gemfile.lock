@@ -11,7 +11,7 @@ GEM
     diff-lcs (1.3)
     domain_name (0.5.20180417)
       unf (>= 0.0.5, < 1.0.0)
-    excon (0.69.1)
+    excon (0.70.0)
     faraday (0.17.0)
       multipart-post (>= 1.2, < 3)
     hashdiff (1.0.0)
